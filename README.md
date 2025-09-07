@@ -200,7 +200,7 @@ conf t
 int giga0/0
 switchport mode trunk
   Error: Command rejected: An interface whose trunk encapsulation is "Auto" can not be configured to "trunk" mode.
-  !this error shows due to trunking mismatch, 3560 supports ISL (Inter-Switch Link) & 802.1Q while 2960 only supports 802.1Q, so we need to manually configure 3560 to 802.1Q
+  !this error shows due to trunking mismatch, 3560 supports ISL (Inter-Switch Link) & 802.1Q while 2960 only support 802.1Q, so we need to manually configure 3560 to 802.1Q
 switchport trunk encapsulation dot1q
 switchport trunk
 exit
